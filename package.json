@@ -1,0 +1,30 @@
+{
+  "name": "automation-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=chromium --project=webkit",
+    "test:all": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "test:docker": "docker compose run --rm playwright"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillngrh33/automation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gillngrh33/automation-test/issues"
+  },
+  "homepage": "https://github.com/gillngrh33/automation-test#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.4.0",
+    "dotenv": "^17.2.2"
+  }
+}
